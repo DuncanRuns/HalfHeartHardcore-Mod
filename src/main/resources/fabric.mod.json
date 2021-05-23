@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "hhhmod",
+  "version": "${version}",
+  "name": "Half Heart Hardcore Mod",
+  "description": "Half Heart Hardcore but it's a mod",
+  "authors": [
+    "DuncanRuns"
+  ],
+  "contributors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/hhhmod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.duncanruns.hhhmod.HHHMod"
+    ],
+    "client": [],
+    "server": []
+  },
+  "mixins": [
+    "hhhmod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.10.7"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "me.duncanruns.hhhmod.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "CreateWorldScreenMixin",
+    "PlayerEntityMixin"
+  ],
+  "client": [],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
