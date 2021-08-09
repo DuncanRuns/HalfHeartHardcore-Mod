@@ -12,14 +12,10 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public abstract class CreateWorldScreenMixin {
 
     @Shadow
-    public boolean hardcore;
-
-    @Shadow
-    private Difficulty currentDifficulty;
+    private boolean hardcore;
 
     @Inject(method = "createLevel", at = @At("HEAD"))
     private void forceHardcoreMixin(CallbackInfo info) {
-        currentDifficulty = Difficulty.HARD;
         hardcore = true;
     }
 }
