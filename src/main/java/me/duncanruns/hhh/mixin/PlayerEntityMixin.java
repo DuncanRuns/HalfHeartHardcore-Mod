@@ -24,5 +24,4 @@ public abstract class PlayerEntityMixin extends LivingEntity {
         getAttributeInstance(EntityAttributes.MAX_HEALTH).setBaseValue(1.0d);
         setHealth(1.0f);
     }
-
 }
