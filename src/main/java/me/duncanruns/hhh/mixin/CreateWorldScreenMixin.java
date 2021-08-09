@@ -15,11 +15,15 @@ public abstract class CreateWorldScreenMixin {
     public boolean hardcore;
 
     @Shadow
-    private Difficulty currentDifficulty;
+    private Difficulty field_24289;
+
+    @Shadow
+    private Difficulty field_24290;
 
     @Inject(method = "createLevel", at = @At("HEAD"))
     private void forceHardcoreMixin(CallbackInfo info) {
-        currentDifficulty = Difficulty.HARD;
+        field_24289 = Difficulty.HARD;
+        field_24290 = Difficulty.HARD;
         hardcore = true;
     }
 }

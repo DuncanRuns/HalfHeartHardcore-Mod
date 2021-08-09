@@ -20,7 +20,7 @@ public abstract class PlayerEntityMixin extends LivingEntity {
     }
 
     @Inject(method="<init>",at=@At("TAIL"))
-    private void hhhMixin(World world, BlockPos pos, float yaw, GameProfile profile, CallbackInfo ci){
+    private void hhhMixin(World world, BlockPos blockPos, GameProfile gameProfile, CallbackInfo ci){
         getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH).setBaseValue(1.0d);
         setHealth(1.0f);
     }
