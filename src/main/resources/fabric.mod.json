@@ -2,19 +2,22 @@
   "schemaVersion": 1,
   "id": "hhhmod",
   "version": "${version}",
-  "name": "Half Heart Hardcore Mod",
-  "description": "Half Heart Hardcore but it's a mod",
+  "name": "Half Heart Hardcore",
+  "description": "Every world is hardcore and the player will have half a heart.",
   "authors": [
     "DuncanRuns"
   ],
   "contributors": [],
-  "contact": {},
+  "contact": {
+    "homepage": "https://github.com/DuncanRuns/HalfHeartHardcore-Mod/",
+    "sources": "https://github.com/DuncanRuns/HalfHeartHardcore-Mod/"
+  },
   "license": "MIT",
   "icon": "assets/hhhmod/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "me.duncanruns.hhhmod.HHHMod"
+      "me.duncanruns.hhh.HHHMod"
     ],
     "client": [],
     "server": []
@@ -23,6 +26,6 @@
     "hhhmod.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.10.7"
+    "fabricloader": ">=0.11.6"
   }
 }

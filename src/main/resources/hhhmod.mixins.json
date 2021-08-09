@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "me.duncanruns.hhhmod.mixin",
+  "package": "me.duncanruns.hhh.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "CreateWorldScreenMixin",

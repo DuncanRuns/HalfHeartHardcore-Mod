@@ -1,4 +1,4 @@
-package me.duncanruns.hhhmod;
+package me.duncanruns.hhh;
 
 import net.fabricmc.api.ModInitializer;
 
@@ -11,7 +11,7 @@ public class HHHMod implements ModInitializer {
     public static Logger LOGGER = LogManager.getLogger();
 
     public static final String MOD_ID = "hhhmod";
-    public static final String MOD_NAME = "Half Heart Hardcore Mod";
+    public static final String MOD_NAME = "Half Heart Hardcore";
 
     @Override
     public void onInitialize() {

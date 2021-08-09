@@ -1,4 +1,4 @@
-package me.duncanruns.hhhmod.mixin;
+package me.duncanruns.hhh.mixin;
 
 import net.minecraft.client.gui.screen.world.CreateWorldScreen;
 import net.minecraft.world.Difficulty;
@@ -15,11 +15,11 @@ public abstract class CreateWorldScreenMixin {
     public boolean hardcore;
 
     @Shadow
-    private Difficulty field_24290;
+    private Difficulty currentDifficulty;
 
-    @Inject(method="createLevel",at=@At("HEAD"))
-    private void forceHardcoreMixin(CallbackInfo info){
-        field_24290 = Difficulty.HARD;
+    @Inject(method = "createLevel", at = @At("HEAD"))
+    private void forceHardcoreMixin(CallbackInfo info) {
+        currentDifficulty = Difficulty.HARD;
         hardcore = true;
     }
 }
