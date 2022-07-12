@@ -5,6 +5,7 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.network.encryption.PlayerPublicKey;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
@@ -20,7 +21,7 @@ public abstract class PlayerEntityMixin extends LivingEntity {
     }
 
     @Inject(method="<init>",at=@At("TAIL"))
-    private void hhhMixin(World world, BlockPos pos, float yaw, GameProfile profile, CallbackInfo ci){
+    private void hhhMixin(World world, BlockPos pos, float yaw, GameProfile profile, PlayerPublicKey publicKey, CallbackInfo ci){
         getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH).setBaseValue(1.0d);
         setHealth(1.0f);
     }
